@@ -90,7 +90,7 @@ def download_and_store_data(insta_handle, photo_df):
     if not os.path.exists('inst_account/{}'.format(insta_handle)):
         os.makedirs('inst_account/{}'.format(insta_handle))
 
-    photo_df.to_csv('inst_account/{}/all_photo_metrics.csv'.format(insta_handle), index = False, encoding = 'utf-8')
+    photo_df.to_csv('inst_account/{}/All_photo_metrics.csv'.format(insta_handle), index = False, encoding = 'utf-8')
 
     for index, row in photo_df.iterrows():
         try:
